@@ -1,6 +1,6 @@
 // sdk by 21Dogs
 //
-// credits
+// credits -
 // pantsusdk - vmt hooking method
 // antario - Render.Text func & global font concept
 // penersdk - automatically updating interface function
