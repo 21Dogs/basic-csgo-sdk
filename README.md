@@ -4,6 +4,6 @@ This is a basic CSGO cheat SDK which is aimed to help newer people to coding int
 grabbing interfaces automatically, hooking to the engine and drawing text with surface in PaintTraverse.
 
 Credits
-PantsuSDK - vmt hooking method\n
-Antario - Render.Text func & global font concept\n
-PenerSDK - automatically updating interface function\n
+PantsuSDK - vmt hooking method <br />
+Antario - Render.Text func & global font concept <br />
+PenerSDK - automatically updating interface function <br />
