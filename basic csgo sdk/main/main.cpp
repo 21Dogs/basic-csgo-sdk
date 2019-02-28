@@ -3,6 +3,7 @@
 // credits
 // pantsusdk - vmt hooking method
 // antario - Render.Text func & global font concept
+// penersdk - automatically updating interface function
 
 #include <windows.h>
 #include <iostream>
