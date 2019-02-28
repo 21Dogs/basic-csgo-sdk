@@ -37,6 +37,9 @@ BOOL WINAPI DllMain(HMODULE hmInstance, DWORD dwReason, LPVOID lpReserved)
 		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)initial_thread, NULL, NULL, NULL);
 		break;
 
+	case DLL_PROCESS_DETACH:
+		break;
+
 	default:
 		break;
 	}

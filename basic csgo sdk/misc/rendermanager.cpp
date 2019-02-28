@@ -20,3 +20,9 @@ void CRender::text(char* text, int x, int y, int font, Color col)
 	Interfaces.g_VGuiSurface->DrawSetTextPos(x, y);
 	Interfaces.g_VGuiSurface->DrawPrintText(WideBuffer, Size, FONT_DRAW_DEFAULT);
 }
+
+void CRender::filledbox(int x, int y, int w, int h, Color col)
+{
+	Interfaces.g_VGuiSurface->DrawSetColor(col);
+	Interfaces.g_VGuiSurface->DrawFilledRect(x, y, x + w, y + h);
+}

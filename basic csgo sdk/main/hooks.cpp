@@ -13,6 +13,7 @@ void __stdcall hk_PaintTraverse(int VGUIPanel, bool ForceRepaint, bool AllowForc
 	if (!strcmp("FocusOverlayPanel", Interfaces.g_VGuiPanel->GetName(VGUIPanel)))
 	{
 		Render.text("sdk by 21Dogs", 300, 10, g::Consolas, Color(255, 255, 255, 255));
+		Render.filledbox(500, 500, 300, 300, Color(255, 255, 255, 255));
 	}
 }
 

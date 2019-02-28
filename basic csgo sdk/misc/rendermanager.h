@@ -11,6 +11,7 @@ public:
 	DWORD Consolas;
 
 	void text(char* text, int x, int y, int font, Color col);
+	void filledbox(int x, int y, int w, int h, Color col);
 };
 
 extern CRender Render;
