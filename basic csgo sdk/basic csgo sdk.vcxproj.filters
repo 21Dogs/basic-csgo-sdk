@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{062022d8-358f-4d7f-bf5a-3ff7cf10fb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\main">
+      <UniqueIdentifier>{8120c55b-f054-4e49-86fc-37cb7675f1a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\misc">
+      <UniqueIdentifier>{596dbe31-5bea-4814-b40c-8a745f293b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\source sdk">
+      <UniqueIdentifier>{639f015d-d80a-4606-84bd-f0ed224c386a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main\main.cpp">
+      <Filter>sdk\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\hooks.cpp">
+      <Filter>sdk\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\interfaces.cpp">
+      <Filter>sdk\main</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\rendermanager.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\globals.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\vmt.cpp">
+      <Filter>sdk\misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main\hooks.h">
+      <Filter>sdk\main</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\vmt.h">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="main\interfaces.h">
+      <Filter>sdk\main</Filter>
+    </ClInclude>
+    <ClInclude Include="source sdk\IAppSystem.h">
+      <Filter>sdk\source sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\rendermanager.h">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\globals.h">
+      <Filter>sdk\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="source sdk\IPanel.h">
+      <Filter>sdk\source sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="source sdk\ISurface.h">
+      <Filter>sdk\source sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
