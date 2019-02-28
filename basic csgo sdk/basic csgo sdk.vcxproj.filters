@@ -13,6 +13,9 @@
     <Filter Include="sdk\source sdk">
       <UniqueIdentifier>{639f015d-d80a-4606-84bd-f0ed224c386a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sdk\menu">
+      <UniqueIdentifier>{20eb33de-6c0f-4bb7-8f7f-e0ff2107d9fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main\main.cpp">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="misc\vmt.cpp">
       <Filter>sdk\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="menu\menu.cpp">
+      <Filter>sdk\menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="source sdk\ISurface.h">
       <Filter>sdk\source sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="menu\menu.h">
+      <Filter>sdk\menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

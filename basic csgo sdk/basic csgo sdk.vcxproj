@@ -121,6 +121,7 @@
     <ClCompile Include="main\hooks.cpp" />
     <ClCompile Include="main\interfaces.cpp" />
     <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
     <ClCompile Include="misc\globals.cpp" />
     <ClCompile Include="misc\rendermanager.cpp" />
     <ClCompile Include="misc\vmt.cpp" />
@@ -128,6 +129,7 @@
   <ItemGroup>
     <ClInclude Include="main\hooks.h" />
     <ClInclude Include="main\interfaces.h" />
+    <ClInclude Include="menu\menu.h" />
     <ClInclude Include="misc\globals.h" />
     <ClInclude Include="misc\rendermanager.h" />
     <ClInclude Include="misc\vmt.h" />

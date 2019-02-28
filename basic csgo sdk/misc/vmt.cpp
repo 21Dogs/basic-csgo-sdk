@@ -1,6 +1,5 @@
 #include "vmt.h"
 
-
 bool VMTHook::bInitialize(PDWORD* ppdwClassBase)
 {
 	m_ppdwClassBase = ppdwClassBase;
@@ -11,24 +10,12 @@ bool VMTHook::bInitialize(PDWORD* ppdwClassBase)
 	*ppdwClassBase = m_pdwNewVMT;
 	return true;
 }
-bool VMTHook::bInitialize(PDWORD** pppdwClassBase) // fix for pp
-{
-	return bInitialize(*pppdwClassBase);
-}
 
 void VMTHook::UnHook(void)
 {
 	if (m_ppdwClassBase)
 	{
 		*m_ppdwClassBase = m_pdwOldVMT;
-	}
-}
-
-void VMTHook::ReHook(void)
-{
-	if (m_ppdwClassBase)
-	{
-		*m_ppdwClassBase = m_pdwNewVMT;
 	}
 }
 

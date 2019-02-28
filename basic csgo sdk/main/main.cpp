@@ -14,15 +14,10 @@
 CHooks Hooks;
 CInterfaces Interfaces;
 
+extern HMODULE library;
+
 void WINAPI initial_thread()
 {
-	AllocConsole();
-	SetConsoleTitleA("debugging console");
-	freopen("CONIN$", "r", stdin);
-	freopen("CONOUT$", "w", stdout);
-
-	std::cout << "initial thread created" << std::endl;
-
 	Interfaces.initialise_interfaces();
 	Hooks.initalise_hooks();
 
@@ -34,10 +29,12 @@ BOOL WINAPI DllMain(HMODULE hmInstance, DWORD dwReason, LPVOID lpReserved)
 	switch (dwReason)
 	{
 	case DLL_PROCESS_ATTACH:
+		library = (HMODULE)hmInstance;
 		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)initial_thread, NULL, NULL, NULL);
 		break;
 
 	case DLL_PROCESS_DETACH:
+		FreeLibraryAndExitThread(hmInstance, TRUE);
 		break;
 
 	default:

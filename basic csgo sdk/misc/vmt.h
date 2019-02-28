@@ -21,10 +21,8 @@ public:
 	}
 
 	bool bInitialize(PDWORD* ppdwClassBase);
-	bool bInitialize(PDWORD** pppdwClassBase);
 
 	void UnHook(void);
-	void ReHook(void);
 
 	int iGetFuncCount(void);
 

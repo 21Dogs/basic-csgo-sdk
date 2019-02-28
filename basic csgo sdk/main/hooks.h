@@ -7,6 +7,8 @@
 #include "../misc/vmt.h"
 #include "../misc/rendermanager.h"
 
+#include "../menu/menu.h"
+
 extern VMTHook * PanelHook;
 
 enum hookIndexes

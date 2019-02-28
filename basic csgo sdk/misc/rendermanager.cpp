@@ -1,6 +1,5 @@
 #include "rendermanager.h"
 
-
 void CRender::text(char* text, int x, int y, int font, Color col)
 {
 	char Buffer[1024] = { '\0' };
@@ -21,8 +20,22 @@ void CRender::text(char* text, int x, int y, int font, Color col)
 	Interfaces.g_VGuiSurface->DrawPrintText(WideBuffer, Size, FONT_DRAW_DEFAULT);
 }
 
+void CRender::box(int x, int y, int w, int h, Color col)
+{
+	Interfaces.g_VGuiSurface->DrawSetColor(col);
+	Interfaces.g_VGuiSurface->DrawOutlinedRect(x, y, x + w, y + h);
+}
+
 void CRender::filledbox(int x, int y, int w, int h, Color col)
 {
+	Interfaces.g_VGuiSurface->DrawSetColor(col);
+	Interfaces.g_VGuiSurface->DrawFilledRect(x, y, x + w, y + h);
+}
+
+void CRender::filledborderedbox(int x, int y, int w, int h, int t, Color col)
+{
+	Interfaces.g_VGuiSurface->DrawSetColor(Color(0, 0, 0, 255));
+	Interfaces.g_VGuiSurface->DrawFilledRect(x - t, y - t, x + w + t, y + h + t);
 	Interfaces.g_VGuiSurface->DrawSetColor(col);
 	Interfaces.g_VGuiSurface->DrawFilledRect(x, y, x + w, y + h);
 }
